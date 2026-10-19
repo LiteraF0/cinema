@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: #621402;
     font-family: "Roboto", sans-serif;
+    color: white;
 }
 
 .container {
@@ -9,6 +14,12 @@ body {
 }
 
 .header {
+    background: linear-gradient(180deg, rgba(145, 63, 1, 0.31) 0%, #420e03 85.62%), 
+                url('../img/bg.jpg') no-repeat center top / cover;
+    min-height: 100vh;
+}
+
+.navbar {
     display: flex;
     align-items: center;
     padding-top: 30px;
@@ -43,4 +54,138 @@ body {
     height: 33px;
     border-radius: 50%;
     margin-left: 11px;
+}
+
+.film {
+    color: white;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.film-title-small {
+    font-size: 24px;
+    line-height: 150%;
+    opacity: 0.5;
+}
+
+.film-title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 11px;
+    margin-bottom: 23px;
+}
+
+.film-description {
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 560px;
+}
+
+.film-tarailer {
+    margin: auto;
+}
+
+.film-details {
+    display: flex;;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.time-icon {
+    margin-right: 14px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+}
+
+.rating-icon {
+    margin-right: 14px;
+}
+
+.rating-strong {
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.session {
+    margin-top: 62px;
+    padding-top: 46px;
+    padding-bottom: 63px; 
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.session-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.date-block {
+    display: flex;
+}
+
+.date-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    margin-right: 15px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+.date-item:hover {
+    background-color: #fe8e05;
+    color: #621402;
+}
+
+.month {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.day {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.week {
+    font-size: 19px;
+    line-height: 20px;
+}
+
+.cinema select {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    padding: 18px;
+    color: white;
+    cursor: pointer;
+    min-width: 470px;
+    margin-top: 15px;
+}
+
+.Stime select {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    padding: 18px;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
 }
